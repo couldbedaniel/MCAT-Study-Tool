@@ -6,7 +6,7 @@ export default function Header() {
             <nav>
                 <ul>
                     <li><a href = "#">Home</a></li>
-                    <li>Progress</li>
+                    <li><a href = "#">Progress</a></li>
                     <li>Calendar</li>
                     <li>Community</li>
                 </ul>

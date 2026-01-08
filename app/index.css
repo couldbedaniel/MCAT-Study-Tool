@@ -1,9 +1,55 @@
 .scores{
+    background-color: lightblue;
     border: 3px solid hsl(0, 0%, 0%);
     border-radius: 10px;
     box-shadow: 5px, 5px, 5px, hsla(0, 0%, 0%, 0.1);
     padding: 15px;
     margin: 10px;
-    max-width: 500px;
-    display: inline-block;
+    max-width: 400px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.scores .eximg{
+    width: fit-content;
+    align-self: center;
+}
+
+.scores .sc-under{
+    display: flex;
+    justify-content: space-between;
+}
+
+.scores .sc-pair{
+    background-color: darkblue;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    align-items: center;
+}
+
+.sc-pair h1,
+.sc-pair h3{
+    margin: 0;
+}
+
+.scores .sc-title{
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    color: lightgray;
+}
+
+.scores .sc-num{
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.streak{
+    border: 3px solid black;
 }
