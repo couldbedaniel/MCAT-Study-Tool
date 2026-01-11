@@ -1,5 +1,11 @@
 body{
     background-color: lightgray;
+    margin: 0;
+}
+
+.big{
+    display: flex;
+    flex-direction: row;
 }
 
 .scores{
@@ -55,14 +61,82 @@ body{
 }
 
 .streak{
-    max-width: 700px;
-    border: 3px solid black;
-    margin: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    border: 0;
+    border-bottom: 5px solid black;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 3rem;
 }
 
 .streak .streakImg{
-    max-height: 75px;
+    max-height: 40px;
+    margin: -48px;
+}
+
+.exam-set{
+    border:2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    background-color: lightyellow;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exam-set .exam-header{
+    text-align: center;
+    margin: 0;
+}
+
+.exam-set .exam-input{
+    justify-content: center;   
+}
+
+.exam-set .exam-input .score-input{
+    height: 25px;
+    border-radius: 3px;
+    margin: .3rem;
+}
+
+.exam-set .exam-input .date-input{
+    height: 26px;
+    border-radius: 3px;
+    margin: .3rem;
+}
+
+.exam-set .exam-input .add-button{
+    height: 30px;
+    width: 50px;
+    border-radius: 3px;
+    margin: .3rem;
+    background-color: green;
+}
+
+.exam-set .exam-list{
+    margin: 0;
+    justify-content: center;
+}
+
+.exam-set .exam-list .exam-item{
+    margin: 5px;
+}
+
+.exam-set .exam-list .delete-button{
+    margin: 5px;
+    background-color: red;
+    border-radius: 3px;
+}
+
+.star-img{
+    max-width: 5px;
 }
