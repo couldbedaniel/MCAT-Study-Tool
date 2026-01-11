@@ -1,3 +1,5 @@
+import Enter from "./enter.js";
+
 export default function Scores(props) {
     const scoreVals = props.items;
     var maxScore = Math.max(...scoreVals);
@@ -5,6 +7,7 @@ export default function Scores(props) {
 
 
     return (
+        <>
         <div className = "scores">
             <img src = "\graphexample.png" className = "eximg"></img>
             <div className = "sc-under">
@@ -22,5 +25,9 @@ export default function Scores(props) {
                 </div>
             </div>
         </div>
+        <div>
+            <Enter/>
+        </div>
+        </>
     )
 }

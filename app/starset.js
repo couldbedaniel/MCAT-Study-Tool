@@ -18,7 +18,6 @@ export default function StarSet(props){
         <img src = {outputStarImage(2)} width = {imgWidth}></img>
         <img src = {outputStarImage(3)} width = {imgWidth}></img>
         <img src = {outputStarImage(4)} width = {imgWidth}></img>
-        <img src = {outputStarImage(5)} width = {imgWidth}></img>
         </>
     );    
 }

@@ -7,9 +7,9 @@ export default function Topics(props){
 
     return(
         <>
-        <div className = "topics">
+        <div className = "topics" style = {{backgroundColor: props.color}}>
             <h2 className = "topic-header">{props.title}</h2>
-            <ol>
+            <ol className = "topic-list">
                 <li className = "topic-item">
                     <span className = "topic-name-header">Topic:</span>
                     <span className = "topic-yield">Yield:</span>
