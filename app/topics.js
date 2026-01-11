@@ -1,26 +1,26 @@
 "use client";
-import React, { useState } from "react"
+import React, { useState } from "react";
+import StarSet from "./starset.js";
 
 export default function Topics(props){
-
+    const topicList = props.list;
 
     return(
-        <div>
-            <h2>Gen Chem</h2>
+        <>
+        <div className = "topics">
+            <h2 className = "topic-header">{props.title}</h2>
             <ol>
-                <li>Atomic Structure</li>
-                <li>The Periodic Table</li>
-                <li>Bonding and Chemical Interactions</li>
-                <li>Atomic Structure</li>
-                <li>The Periodic Table</li>
-                <li>Bonding and Chemical Interactions</li>
-                <li>Atomic Structure</li>
-                <li>The Periodic Table</li>
-                <li>Bonding and Chemical Interactions</li>
-                <li>Atomic Structure</li>
-                <li>The Periodic Table</li>
-                <li>Bonding and Chemical Interactions</li>
+                <li className = "topic-item">
+                    <span className = "topic-name-header">Topic:</span>
+                    <span className = "topic-yield">Yield:</span>
+                </li>
+                {topicList.map((item, index) => 
+                <li key = {index} className = "topic-item">
+                    <span className = "topic-name">{item.topic}</span>
+                    <span className = "topic-star"><StarSet number = {item.weight}/></span>
+                </li>)}
             </ol>
         </div>
+        </>
     );
 }

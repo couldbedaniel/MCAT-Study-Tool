@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 
-export default function StarSet(){
-    const imgWidth = 40;
-    const numStars = 4;
+export default function StarSet(props){
+    const imgWidth = 20;
+    const numStars = props.number;
 
     function outputStarImage(index){
         if(index <= numStars){

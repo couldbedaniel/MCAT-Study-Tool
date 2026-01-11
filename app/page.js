@@ -4,9 +4,11 @@ import Streak from "./streak.js";
 import Enter from "./enter.js";
 import Topics from "./topics.js";
 import StarSet from "./starset.js"
+import {genChem} from "../data/topicsdata.js"
 
 export default function Home() {
-  const scoresValsExample = [506, 509, 510, 513, 517, 515]
+  const scoresValsExample = [506, 509, 510, 513, 517, 515];
+  const generalChem = genChem;
   
   return (
     <>
@@ -17,8 +19,7 @@ export default function Home() {
         <Enter/>
       </div>
       <div>
-        <Topics/>
-        <StarSet/>
+        <Topics list = {generalChem} title = "General Chemistry"/>
       </div>
     </div>
     </>
